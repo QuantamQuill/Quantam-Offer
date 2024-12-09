@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background: linear-gradient(45deg, #ffcc00, #ff9900, #66ccff, #ff66cc);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+}
+
+.wheel-container {
+    position: relative;
+}
+
+#wheel {
+    border: 10px solid #ccc;
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+#spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#prize-message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.verify-section {
+    margin-top: 40px;
+}
+
+#verify-code {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#verify-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prize-image {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
